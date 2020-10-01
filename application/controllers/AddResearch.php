@@ -18,7 +18,9 @@ class AddResearch extends CI_Controller
         $this->Main_model->alertPromt('Research Deleted Successfully', 'researchDeleted');
 
         $data['researchTable'] = $this->Main_model->get('research', 'id');
+        $this->load->view('includes/header');
         $this->load->view('AddResearch', $data);
+        $this->load->view('includes/footer');
     }
 
     function projectClassification()
@@ -42,8 +44,8 @@ class AddResearch extends CI_Controller
 
         //get the list of classifications
         $data['classificationTable'] = $this->Main_model->get('project_classification', 'id');
-
         $this->load->view('projectClassification', $data);
+
     }
 
     function deleteResearch()
