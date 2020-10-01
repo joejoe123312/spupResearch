@@ -44,7 +44,10 @@ class AddResearch extends CI_Controller
 
         //get the list of classifications
         $data['classificationTable'] = $this->Main_model->get('project_classification', 'id');
+        $this->load->view('includes/header');
         $this->load->view('projectClassification', $data);
+        $this->load->view('includes/footer');
+
 
     }
 

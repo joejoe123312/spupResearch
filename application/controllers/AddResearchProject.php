@@ -89,7 +89,9 @@ class AddResearchProject extends CI_Controller
         }
 
 
-
+        
         $this->load->view('AddResearchProject', $data);
+        
+
     }
 }
