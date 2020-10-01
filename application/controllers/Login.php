@@ -29,8 +29,7 @@ class Login extends CI_Controller
 			if (count($credentialsTable->result_array()) != 0) {
 				//meron siyang nahanap
 
-				//validate and take account the user type
-				$credentialsTable = $credentialsTable->row();
+				redirect("Dashboard");
 			} else {
 				//wala siyang nahanap
 				$this->session->set_userdata('userInvalid', 1);
