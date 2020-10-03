@@ -5,9 +5,6 @@
         </center>
     </div>
     <!--end .col -->
-
-
-
 <div style="margin-bottom:20px"></div>
 
 <div class="row">

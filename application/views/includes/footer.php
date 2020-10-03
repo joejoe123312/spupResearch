@@ -81,6 +81,18 @@
 		<script src="<?= base_url() ?>assets/js/core/source/AppVendor.js"></script>
 		<script src="<?= base_url() ?>assets/js/core/demo/Demo.js"></script>
 		<script src="<?= base_url() ?>assets/js/core/demo/DemoTableDynamic.js"></script>
+		<script src="<?= base_url() ?>assets/js/libs/dropzone/dropzone.min.js"></script>
+		<script src="<?= base_url() ?>assets/js/libs/typeahead/typeahead.bundle.min.js"></script>
+		<script src="<?= base_url() ?>assets/js/libs/jquery-ui/jquery-ui.min.js"></script>
+		<script src="<?= base_url() ?>assets/js/libs/select2/select2.min.js"></script>
+		<script src="<?= base_url() ?>assets/js/libs/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
+		<script src="<?= base_url() ?>assets/js/libs/multi-select/jquery.multi-select.js"></script>
+		<script src="<?= base_url() ?>assets/js/libs/inputmask/jquery.inputmask.bundle.min.js"></script>
+		<script src="<?= base_url() ?>assets/js/libs/moment/moment.min.js"></script>
+		<script src="<?= base_url() ?>assets/js/libs/bootstrap-datepicker/bootstrap-datepicker.js"></script>
+		<script src="<?= base_url() ?>assets/js/libs/bootstrap-colorpicker/bootstrap-colorpicker.min.js"></script>
+		<script src="<?= base_url() ?>assets/js/libs/toastr/toastr.js"></script>
+		<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
 		<!-- END JAVASCRIPT -->
         	</body>
 </html>

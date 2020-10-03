@@ -11,7 +11,9 @@
 
 <div class=" col-md-15">
         <form class="form" action="" method="post">
-        <?= validation_errors() ?>                                
+        
+<?= validation_errors("<div class='section-body contain-lg'> <strong><p class='toast-error'>") ?> 
+                                 
         <div class="card style-default-dark">
             <div class="card-head">
                 <header>Add New Research Project</header>
@@ -19,13 +21,13 @@
             <div class="card-body form-inverse">
                 <br>
                 
-                    <div class=" col-md-7">
+                    <div class=" col-md-15 ">
 
                     <div class="form-group">
                     
                             <input type="text" class="form-control" name="researchTitle" placeholder="Enter Research Title" autocomplete="off">
                             <label for="Lastname3">Research Title</label>
-                        </div>
+                       
                         <div class="form-group">
                             <input type="text" class="form-control" name="academicYear" placeholder="Add Academic year" autocomplete="off">
                             <label for="Lastname3">Academic Year</label>
@@ -34,19 +36,63 @@
                             <input type="number" class="form-control" name="numberOfResearchers" placeholder="How many research members?" id="numberOfResearchers" autocomplete="off">
                             <label for="Lastname3">Research Member</label>
                         </div>
-                        </div>
-                    
-            
-                    
-                
-                
-                
+                        <button type="button" id="researchBtn" class="btn ink-reaction btn-raised btn-primary pull-right"> Enter</button></a>
+<br><br>
+                        <!-- Researcher Starts Here -->
+                            <div id="research1">
+                                <div class="form-group">
+                                <input type="text" class="form-control" name="researcher1" placeholder="Enter Researcher's name" autocomplete="off">
+                                <label for="Lastname3">First Researcher</label>
+                                </div>
+                            </div>
+                             <div id="research2">
+                                <div class="form-group">
+                                <input type="text" class="form-control" name="researcher2" placeholder="Enter Researcher's name" autocomplete="off">
+                                <label for="Lastname3">Second Researcher</label>
+                                </div>
+                            </div>
+                             <div id="research3">
+                                <div class="form-group">
+                                <input type="text" class="form-control" name="researcher3" placeholder="Enter Researcher's name" autocomplete="off">
+                                <label for="Lastname3">Third Researcher</label>
+                                </div>
+                            </div>
+                             <div id="research4">
+                                <div class="form-group">
+                                <input type="text" class="form-control" name="researcher4" placeholder="Enter Researcher's name" autocomplete="off">
+                                <label for="Lastname3">Fourth Researcher</label>
+                                </div>
+                            </div>
+                             <div id="research5">
+                                <div class="form-group">
+                                <input type="text" class="form-control" name="researcher5" placeholder="Enter Researcher's name" autocomplete="off">
+                                <label for="Lastname3">Fifth Researcher</label>
+                                </div>
+                            </div>
+                    <!-- Ends Here -->
+                          <div class="form-group">
+                                <select id="" name="projClassification" class="form-control">
+                                    <option value="">Project Classification</option>
+                                    <?php foreach ($projectClassification->result() as $row) { ?>
+                                    <option value="<?= $row->id ?>"><?= $row->name ?></option>
+                                    <?php } ?>
+                            
+                                </select>
+                                <label for="select1">Select Classification</label>
+                          </div>
+                            <div class="form-group">
+                                <label for="select1"><strong>Upload Files / Documents</strong></label><br>
+                                <input type="file" name="file" class="ink-reaction btn-raised btn-primary ">
+                          </div>
+                                           
+
+                           </div>
+                           </div>
             </div>
             <!--end .card-body -->
             <div class="card-actionbar">
                 <div class="card-actionbar-row">
-                    <button type="submit" class="btn btn-flat btn-default-light ink-reaction">Create
-                        account</button>
+                    <button type="submit" name="submit" class="btn btn-flat btn-default-light ink-reaction"> Submit Project</button>
                 </div>
             </div>
         </div>
@@ -54,3 +100,64 @@
         <em class="text-caption">Inversed form</em>
     </form>
 </div>
+
+<!-- Start Script-->
+<?php $url = base_url() . ""; ?>
+<script>
+    $(document).ready(function() {
+        //hide all of the researchers input first
+        function hideInput() {
+            $("#researcher1").hide();
+            $("#researcher2").hide();
+            $("#researcher3").hide();
+            $("#researcher4").hide();
+            $("#researcher5").hide();
+        }
+
+        hideInput();
+
+
+        $("#researchBtn").click(function() {
+            var researchers = $("#numberOfResearchers").val();
+
+            //if the user does not put any number
+            if (researchers == '') {
+                alert('Invalid input!');
+            }
+
+            if (researchers == 1) {
+                hideInput();
+                $("#researcher1").fadeIn(1000);
+
+            } else if (researchers == 2) {
+                hideInput();
+                $("#researcher1").fadeIn(1000);
+                $("#researcher2").fadeIn(1000);
+
+            } else if (researchers == 3) {
+                hideInput();
+                $("#researcher1").fadeIn(1000);
+                $("#researcher2").fadeIn(1000);
+                $("#researcher3").fadeIn(1000);
+
+            } else if (researchers == 4) {
+                hideInput();
+                $("#researcher1").fadeIn(1000);
+                $("#researcher2").fadeIn(1000);
+                $("#researcher3").fadeIn(1000);
+                $("#researcher4").fadeIn(1000);
+
+            } else if (researchers == 5) {
+                hideInput();
+                $("#researcher1").fadeIn(1000);
+                $("#researcher2").fadeIn(1000);
+                $("#researcher3").fadeIn(1000);
+                $("#researcher4").fadeIn(1000);
+                $("#researcher5").fadeIn(1000);
+            } else {
+                alert('Invalid Input!');
+            }
+        });
+    });
+</script>
+<!-- End Script -->

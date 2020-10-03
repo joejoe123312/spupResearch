@@ -20,7 +20,13 @@
 		<link type="text/css" rel="stylesheet" href="<?= base_url() ?>assets/css/theme-default/libs/DataTables/jquery.dataTables.css?1423553989" />
 		<link type="text/css" rel="stylesheet" href="<?= base_url() ?>assets/css/theme-default/libs/DataTables/extensions/dataTables.colVis.css?1423553990" />
 		<link type="text/css" rel="stylesheet" href="<?= base_url() ?>assets/css/theme-default/libs/DataTables/extensions/dataTables.tableTools.css?1423553990" />
-
+		<link type="text/css" rel="stylesheet" href="<?= base_url() ?>assets/css/theme-default/libs/bootstrap-colorpicker/bootstrap-colorpicker.css?1424887860" />
+		<link type="text/css" rel="stylesheet" href="<?= base_url() ?>assets/css/theme-default/libs/bootstrap-tagsinput/bootstrap-tagsinput.css?1424887862" />
+		<link type="text/css" rel="stylesheet" href="<?= base_url() ?>assets/css/theme-default/libs/typeahead/typeahead.css?1424887863" />
+		<link type="text/css" rel="stylesheet" href="<?= base_url() ?>assets/css/theme-default/libs/dropzone/dropzone-theme.css?1424887864" />
+		<link type="text/css" rel="stylesheet" href="<?= base_url() ?>assets/css/theme-default/libs/select2/select2.css?1424887856" />
+		<link type="text/css" rel="stylesheet" href="<?= base_url() ?>assets/css/theme-default/libs/multi-select/multi-select.css?1424887857" />
+		<link type="text/css" rel="stylesheet" href="<?= base_url() ?>assets/css/theme-default/libs/toastr/toastr.css?1425466569" />
 		<!-- END STYLESHEETS -->
 
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
