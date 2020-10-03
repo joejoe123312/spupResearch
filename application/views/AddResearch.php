@@ -1,20 +1,13 @@
 <div class="section-body contain-lg">
-    <div class="col-lg-12">
+    <div class="col-lg-15">
         <center class="style-default-dark">
             <h1 style="padding:20px;font-weight:bold">Welcome To Research</h1>
         </center>
     </div>
     <!--end .col -->
-</div>
-
-<?php $addProjClassification = base_url() . "AddResearch/projectClassification" ?>
-<?php $addResearch = base_url() . "addResearchProject" ?>
-<?php $home = base_url() . "Dashboard" ?></a>
 
 
-<a href="<?= $addProjClassification ?>"><button type="button" class="btn ink-reaction btn-raised btn-primary">Add Project Classification</button></a>
-<a href="<?= $addResearch ?>"><button type="button" class="btn ink-reaction btn-raised btn-primary">Add New Research</button></a>
-<a href="<?= $home ?>"><button type="button" class="btn ink-reaction btn-raised btn-primary">Home</button></a>
+
 <div style="margin-bottom:20px"></div>
 
 <div class="row">

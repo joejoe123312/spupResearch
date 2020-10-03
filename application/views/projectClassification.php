@@ -9,7 +9,7 @@
                                         <?= validation_errors("<p>") ?>
 									<div class="card">
 										<div class="card-head style-primary">
-											<header>Create an account</header>
+											<header>Add Here</header>
 										</div>
 										<div class="card-body">
 											

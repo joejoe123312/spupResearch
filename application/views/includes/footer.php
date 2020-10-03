@@ -27,14 +27,25 @@
 								<span class="title">Dashboard</span>
 							</a>
 						</li>
-                        <li class="active">
-                        <?php $addResearchProj = base_url() . "AddResearch" ?>
-
-							<a href="<?= $addResearchProj?>">
+                   
+						<li class="gui-folder expanded active">
+							<a>
 								<div class="gui-icon"><i class="md md-search"></i></div>
-								<span class="title">Add Research</span>
+								<span class="title">RESEARCH</span>
 							</a>
-						</li><!--end /menu-li -->
+							<!--start submenu -->
+							<ul > 
+								<?php $addResearchProj = base_url() . "AddResearch" ?>
+								<?php $projectClassification = base_url() . "AddResearch/ProjectClassification" ?>
+								<?php $addResearchProject = base_url() . "AddResearchProject" ?>
+
+								<li><a href="<?= $addResearchProj ?>"><span class="title">Archived Research</span></a></li>
+								<li><a href="<?= $addResearchProject ?>"><span class="title">Add Research</span></a></li>
+								<li><a href="<?= $projectClassification ?>"><span class="title">Add Project Classification</span></a></li>
+
+						
+							</ul><!--end /submenu -->
+						</li>
 						<!-- END DASHBOARD -->
 
 						<!-- BEGIN EMAIL -->

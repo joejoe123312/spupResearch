@@ -103,8 +103,8 @@ class AddResearchProject extends CI_Controller
             redirect("AddResearchProject");
         }
 
-
-
+        $this->load->view('includes/header');
         $this->load->view('AddResearchProject', $data);
+        $this->load->view('includes/footer');
     }
 }
