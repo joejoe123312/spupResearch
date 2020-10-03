@@ -12,7 +12,7 @@
     <div class=" col-md-15">
         <form class="form" action="" method="post">
 
-            <?= validation_errors("<div class='section-body contain-lg'> <strong><p class='toast-error' style='color: white'>") ?>
+            <?= validation_errors("<div class='section-body contain-lg'> <strong><p class='toast-error' style='color: white'> </p></div>") ?>
 
             <div class="card style-default-dark">
                 <div class="card-head">
@@ -80,14 +80,20 @@
                                 </select>
                                 <label for="select1">Select Classification</label>
                             </div>
+                            
+                            <div class=" col-md-4 ">
                             <div class="form-group">
-                                <label for="select1"><strong>Upload Files / Documents</strong></label><br>
-                                <input type="file" name="file" class="ink-reaction btn-raised btn-primary ">
+                            <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="customFileLang" lang="en">
+                                    <label class="custom-file-label" for="customFileLang">Upload Archived File</label>
+                                    </div>
+                            </div>
                             </div>
 
 
                         </div>
                     </div>
+                    
                 </div>
                 <!--end .card-body -->
                 <div class="card-actionbar">
@@ -101,6 +107,7 @@
         </form>
     </div>
 
+						
     <!-- Start Script-->
     <?php $url = base_url() . ""; ?>
     <script>
