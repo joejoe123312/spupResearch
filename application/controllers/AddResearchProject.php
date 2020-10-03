@@ -8,6 +8,7 @@ class AddResearchProject extends CI_Controller
     {
         parent::__construct();
         $this->load->model('Main_model');
+        $this->load->model('Research_model');
         $this->load->model('Researchers_model');
     }
 
@@ -16,6 +17,11 @@ class AddResearchProject extends CI_Controller
         //notification
         $this->Main_model->alertPromt('Project Added Succesfully', 'projectAdded');
         $this->Main_model->alertPromt('Must Enter a Researcher', 'invalidResearcher');
+
+        //Upload notifications
+        $this->Main_model->alertPromt('File not allowed', 'fileNotAllowed');
+        $this->Main_model->alertPromt('Please try again', 'fileError');
+        $this->Main_model->alertPromt('File uploaded successfully', 'fileUploaded');
 
         //get project classification 
         $data['projectClassification'] = $this->Main_model->get('project_classification', 'id');
@@ -67,11 +73,20 @@ class AddResearchProject extends CI_Controller
         $this->form_validation->set_rules('researchTitle', 'Research Title', 'required');
         $this->form_validation->set_rules('academicYear', 'Academic Year', 'required');
         $this->form_validation->set_rules('projClassification', 'Project Classification', 'required');
+        //$this->form_validation->set_rules('file', 'Document', 'required');
         if ($this->form_validation->run()) {
             $insert['project_title'] = $this->input->post('researchTitle');
             $insert['academic_year'] = $this->input->post('academicYear');
             $insert['project_classification_id'] = $this->input->post('projClassification');
-            //insert name of the project file
+
+            //file management: insert name of the project file
+            $file = $_FILES['file'];
+
+            $fileName = $this->Research_model->fileUpload('AddResearchProject');
+
+            //include the filename into the database
+            $insert['filename'] = $fileName;
+
             $researchId = $this->Main_model->_insert('research', $insert);
 
             //get all of the researchers
@@ -89,9 +104,7 @@ class AddResearchProject extends CI_Controller
         }
 
 
-        
-        $this->load->view('AddResearchProject', $data);
-        
 
+        $this->load->view('AddResearchProject', $data);
     }
 }

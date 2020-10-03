@@ -1,7 +1,7 @@
 <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 
 <h1>Add New Reserach</h1>
-<form action="" method="post">
+<form action="" method="post" enctype="multipart/form-data">
     <?= validation_errors() ?>
     <label for="">Research Title</label><br>
     <input type="text" name="researchTitle" placeholder="Enter Research Title" autocomplete="off"><br><br>
