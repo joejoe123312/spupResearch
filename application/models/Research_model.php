@@ -52,4 +52,10 @@ class Research_model extends CI_Model
         //return new filename 
         return $fileNameNew;
     }
+
+    function getFileName($researchId)
+    {
+        $researchTable = $this->Main_model->get_where('research', 'id', $researchId)->row();
+        return $researchTable->filename;
+    }
 }

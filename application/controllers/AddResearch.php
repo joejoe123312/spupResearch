@@ -47,21 +47,35 @@ class AddResearch extends CI_Controller
         $this->load->view('includes/header');
         $this->load->view('projectClassification', $data);
         $this->load->view('includes/footer');
-
-
     }
 
     function deleteResearch()
     {
         $researchId = $this->uri->segment(3);
 
+        //notifications
+        $this->Main_model->alertPromt('Error in deleting the file please try again', 'deleteError');
+
         //perform deletion
         if (isset($_GET['confirm'])) {
-            $this->Main_model->_delete('research', 'id', $researchId);
 
-            //notify and redirect
-            $this->session->set_userdata('researchDeleted', 1);
-            redirect("AddResearch");
+
+            //delete the file that is incorporated with the research
+            //get the file name
+            $fileName = $this->Research_model->getFileName($researchId);
+            $unlink = unlink('documents/' . $fileName);
+
+            //trap if the delition is completed
+            if ($unlink) {
+                $this->Main_model->_delete('research', 'id', $researchId);
+
+                //notify and redirect
+                $this->session->set_userdata('researchDeleted', 1);
+                redirect("AddResearch");
+            } else {
+                $this->session->set_userdata('deleteError', 1);
+                redirect("AddResearch/deleteResearch/$researchId");
+            }
         }
 
         //get the research data
