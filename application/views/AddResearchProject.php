@@ -10,7 +10,7 @@
 
 
     <div class=" col-md-15">
-        <form class="form" action="" method="post">
+        <form class="form" action="" method="post" enctype="multipart/form-data">
 
             <?= validation_errors("<div class='section-body contain-lg'> <strong><p class='toast-error' style='color: white'>") ?>
 
