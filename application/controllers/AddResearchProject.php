@@ -10,6 +10,7 @@ class AddResearchProject extends CI_Controller
         $this->load->model('Main_model');
         $this->load->model('Research_model');
         $this->load->model('Researchers_model');
+        
     }
 
     public function index()

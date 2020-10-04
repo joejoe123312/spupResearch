@@ -103,7 +103,7 @@
                 </div>
             </div>
             <!--end .card -->
-            <em class="text-caption">Inversed form</em>
+            <em class="text-caption">Add Research Projects</em>
         </form>
     </div>
 

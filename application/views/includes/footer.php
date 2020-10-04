@@ -21,8 +21,9 @@
 					<ul id="main-menu" class="gui-controls">
 
 						<!-- BEGIN DASHBOARD -->
-						<li class="active">
-							<a href="">
+						<li class="active1">
+							<?php $dashBoard = base_url() . "Dashboard" ?>
+							<a href="<?= $dashBoard ?>">
 								<div class="gui-icon"><i class="md md-home"></i></div>
 								<span class="title">Dashboard</span>
 							</a>
@@ -39,9 +40,9 @@
 								<?php $projectClassification = base_url() . "AddResearch/ProjectClassification" ?>
 								<?php $addResearchProject = base_url() . "AddResearchProject" ?>
 
-								<li><a href="<?= $addResearchProj ?>"><span class="title">Archived Research</span></a></li>
-								<li><a href="<?= $addResearchProject ?>"><span class="title">Add Research</span></a></li>
-								<li><a href="<?= $projectClassification ?>"><span class="title">Add Project Classification</span></a></li>
+								<li class="active2"><a href="<?= $addResearchProj ?>"><span class="title">Archived Research</span></a></li>
+								<li class="active3"><a href="<?= $addResearchProject ?>"><span class="title">Add Research</span></a></li>
+								<li class="active4"><a href="<?= $projectClassification ?>"><span class="title">Add Project Classification</span></a></li>
 
 						
 							</ul><!--end /submenu -->
@@ -95,7 +96,6 @@
 		<script src="<?= base_url() ?>assets/js/libs/bootstrap-datepicker/bootstrap-datepicker.js"></script>
 		<script src="<?= base_url() ?>assets/js/libs/bootstrap-colorpicker/bootstrap-colorpicker.min.js"></script>
 		<script src="<?= base_url() ?>assets/js/libs/toastr/toastr.js"></script>
-		<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
 		<!-- END JAVASCRIPT -->
         	</body>
 </html>
