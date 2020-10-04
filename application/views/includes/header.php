@@ -67,12 +67,12 @@
 					<a href="javascript:void(0);" class="dropdown-toggle ink-reaction" data-toggle="dropdown">
 						<img src="<?= base_url() ?>assets/img/avatar1.jpg?1403934956" alt="">
 						<span class="profile-info">
-							Daniel Johnson
+							SECRETARY
 							<small>Administrator</small>
 						</span>
 					</a>
 					<ul class="dropdown-menu animation-dock">
-						<li><a href="">My appointments</a></li>
+						<li><a href="">Change Password</a></li>
 						<li class="divider"></li>
 						<li><a href=""><i class="fa fa-fw fa-power-off text-danger"></i> Logout</a></li>
 					</ul><!--end .dropdown-menu -->

@@ -14,12 +14,11 @@
 
             <?= validation_errors("<div class='section-body contain-lg'> <strong><p class='toast-error' style='color: white'> </p></div>") ?>
 
-            <div class="card style-default-dark">
-                <div class="card-head">
-                    <header>Add New Research Project</header>
-                </div>
-                <div class="card-body form-inverse">
-                    <br>
+            <div class="card">
+            <div class="card-head style-primary">
+                <header>Add Research Project</header>
+            </div>
+            <div class="card-body">        <br>
 
                     <div class=" col-md-15 ">
 
@@ -33,7 +32,7 @@
                                 <label for="Lastname3">Academic Year</label>
                             </div>
                             <div class="form-group">
-                                <input type="number" class="form-control" name="numberOfResearchers" placeholder="How many research members?" id="numberOfResearchers" autocomplete="off">
+                                <input type="number" style="color:black"class="form-control" name="numberOfResearchers" placeholder="How many research members?" id="numberOfResearchers" autocomplete="off">
                                 <label for="Lastname3">Research Member</label>
                             </div>
                             <button type="button" id="researchBtn" class="btn ink-reaction btn-raised btn-primary pull-right"> Enter</button></a>
@@ -81,7 +80,7 @@
                                 <label for="select1">Select Classification</label>
                             </div>
                             
-                            <div class=" col-md-4 ">
+                            <div class=" col-md-4 pull-right ">
                             <div class="form-group">
                             <div class="custom-file">
                                     <input type="file" class="custom-file-input" id="customFileLang" lang="en">
