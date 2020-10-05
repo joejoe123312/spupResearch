@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<title>Material Admin - Dashboard</title>
 
@@ -10,12 +9,14 @@
 	<meta name="keywords" content="your,keywords">
 	<meta name="description" content="Short explanation about this website">
 	<!-- END META -->
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 492f372c5d36b378e1d8b0b9dbfb4432dd608a1f
 	<!-- BEGIN STYLESHEETS -->
 	<!-- Font Awesome -->
-
 	<!-- Bootstrap core CSS -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
 
@@ -77,7 +78,11 @@
 						</a>
 						<ul class="dropdown-menu animation-dock">
 							<?php $changePassword = base_url() . "Login/changePassword" ?>
+<<<<<<< HEAD
 
+=======
+							<li><a href="<?= $changePassword ?>"><i class="fa fa-fw fa-lock text-danger"></i> Change password</a></li>
+>>>>>>> 492f372c5d36b378e1d8b0b9dbfb4432dd608a1f
 
 							<?php $logout = base_url() . "Login/logout" ?>
 							<li><a href="<?= $logout ?>"><i class="fa fa-fw fa-power-off text-danger"></i> Logout</a></li>
