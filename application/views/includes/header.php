@@ -94,4 +94,3 @@
 			<!-- BEGIN CONTENT-->
 			<div id="content">
 				<section>
-					<div class="section-body contain-lg">

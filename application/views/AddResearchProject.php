@@ -6,7 +6,6 @@
         </center>
     </div>
     <!--end .col -->
-    <div style="margin-bottom:20px"></div>
 
 
     <div class=" col-md-15">
