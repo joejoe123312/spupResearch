@@ -80,20 +80,20 @@
                                 </select>
                                 <label for="select1">Select Classification</label>
                             </div>
-                            
+
                             <div class=" col-md-4 ">
-                            <div class="form-group">
-                            <div class="custom-file">
-                                    <input type="file" class="custom-file-input" id="customFileLang" lang="en">
-                                    <label class="custom-file-label" for="customFileLang">Upload Archived File</label>
+                                <div class="form-group">
+                                    <div class="custom-file">
+                                        <input type="file" name="file" class="custom-file-input" id="customFileLang" lang="en">
+                                        <label class="custom-file-label" for="customFileLang">Upload Archived File</label>
                                     </div>
-                            </div>
+                                </div>
                             </div>
 
 
                         </div>
                     </div>
-                    
+
                 </div>
                 <!--end .card-body -->
                 <div class="card-actionbar">
@@ -107,7 +107,7 @@
         </form>
     </div>
 
-						
+
     <!-- Start Script-->
     <?php $url = base_url() . ""; ?>
     <script>

@@ -5,9 +5,17 @@ class Research_model extends CI_Model
 {
     function maskProjClassification($classificationId)
     {
-        $classificationTable = $this->Main_model->get_where('project_classification', 'id', $classificationId)->row();
-        $name = $classificationTable->name;
-        return $name;
+        $classificationTable = $this->Main_model->get_where('project_classification', 'id', $classificationId);
+        $classificationRepo = $this->Main_model->get_where('classification_repo', 'classification_id', $classificationId);
+
+        //count the classifications
+        if (count($classificationTable->result_array()) != 0) {
+            $classificationTable = $classificationTable->row();
+            return $classificationTable->name;
+        } else {
+            $classificationRepo = $classificationRepo->row();
+            return $classificationRepo->name;
+        }
     }
 
     public function fileUpload($redirect)
@@ -57,5 +65,17 @@ class Research_model extends CI_Model
     {
         $researchTable = $this->Main_model->get_where('research', 'id', $researchId)->row();
         return $researchTable->filename;
+    }
+
+    function getClassificationId($researchId)
+    {
+        $researchTable = $this->Main_model->get_where('research', 'id', $researchId)->row();
+        return $researchTable->project_classification_id;
+    }
+
+    function getClassificationName($classificationId)
+    {
+        $cTable =  $this->Main_model->get_where('project_classification', 'id', $classificationId)->row();
+        return $cTable->name;
     }
 }
