@@ -15,10 +15,10 @@
             <?= validation_errors("<div class='section-body contain-lg'> <strong><p class='toast-error' style='color: white'> </p></div>") ?>
 
             <div class="card">
-            <div class="card-head style-primary">
-                <header>Add Research Project</header>
-            </div>
-            <div class="card-body">        <br>
+                <div class="card-head style-primary">
+                    <header>Add Research Project</header>
+                </div>
+                <div class="card-body"> <br>
 
                     <div class=" col-md-15 ">
 
@@ -32,7 +32,7 @@
                                 <label for="Lastname3">Academic Year</label>
                             </div>
                             <div class="form-group">
-                                <input type="number" style="color:black"class="form-control" name="numberOfResearchers" placeholder="How many research members?" id="numberOfResearchers" autocomplete="off">
+                                <input type="number" style="color:black" class="form-control" name="numberOfResearchers" placeholder="How many research members?" id="numberOfResearchers" autocomplete="off">
                                 <label for="Lastname3">Research Member</label>
                             </div>
                             <button type="button" id="researchBtn" class="btn ink-reaction btn-raised btn-primary pull-right"> Enter</button></a>
@@ -79,39 +79,26 @@
                                 </select>
                                 <label for="select1">Select Classification</label>
                             </div>
-<<<<<<< HEAD
+
 
                             <div class=" col-md-4 ">
                                 <div class="form-group">
                                     <div class="custom-file">
                                         <input type="file" name="file" class="custom-file-input" id="customFileLang" lang="en">
                                         <label class="custom-file-label" for="customFileLang">Upload Archived File</label>
-=======
-                            
-                            <div class=" col-md-4 pull-right ">
-                            <div class="form-group">
-                            <div class="custom-file">
-                                    <input type="file" class="custom-file-input" id="customFileLang" lang="en">
-                                    <label class="custom-file-label" for="customFileLang">Upload Archived File</label>
->>>>>>> 7f9fcadc980c45a85e209f4ef08ff44078b95ba4
                                     </div>
                                 </div>
+
                             </div>
-
-
+                            <!--end .card-body -->
+                            <div class="card-actionbar">
+                                <div class="card-actionbar-row">
+                                    <button type="submit" name="submit" class="btn btn-flat btn-default-dark ink-reaction"> Submit Project</button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-
-                </div>
-                <!--end .card-body -->
-                <div class="card-actionbar">
-                    <div class="card-actionbar-row">
-                        <button type="submit" name="submit" class="btn btn-flat btn-default-light ink-reaction"> Submit Project</button>
-                    </div>
-                </div>
-            </div>
-            <!--end .card -->
-            <em class="text-caption">Add Research Projects</em>
+                        <!--end .card -->
+                        <em class="text-caption">Add Research Projects</em>
         </form>
     </div>
 
