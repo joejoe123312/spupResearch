@@ -28,7 +28,10 @@ class Login extends CI_Controller
 
 			if (count($credentialsTable->result_array()) != 0) {
 				//meron siyang nahanap
+				$credentialsTable = $credentialsTable->row();
+				$credentialsId = $credentialsTable->id;
 
+				$this->session->set_userdata('account_id', $credentialsId);
 				redirect("Dashboard");
 			} else {
 				//wala siyang nahanap
@@ -44,5 +47,40 @@ class Login extends CI_Controller
 	{
 		session_destroy();
 		redirect('Login');
+	}
+
+	function changePassword()
+	{
+		$accountId = $_SESSION['account_id'];
+
+		//notifications
+		$this->Main_model->alertPromt('');
+
+		$this->form_validation->set_rules('currentPassword', 'Current Password', 'required');
+		$this->form_validation->set_rules('newPassword', 'New Password', 'required');
+		$this->form_validation->set_rules('confirmPassword', 'Confirm Password', 'required');
+		if ($this->form_validation->run()) {
+			$currentPassword = $this->input->post("currentPassword");
+			$newPassword = $this->input->post("newPassword");
+			$confirmPassword = $this->input->post("confirmPassword");
+
+			//validate current password
+			$where['id'] = $accountId;
+			$where['password'] = $currentPassword;
+			$credentialsTable = $this->Main_model->multiple_where('credentials', $where);
+
+			if (count($credentialsTable->result_array()) == 0) {
+				$this->session->set_userdata('currentPasswordWrong', 1);
+				redirect("Login/changePassword");
+			}
+
+			//validate if new password and confirm password
+			if ($newPassword != $confirmPassword) {
+				$this->session->set_userdata('confirmPasswordWrong', 1);
+				redirect("Login/changePassword");
+			}
+		}
+
+		$this->load->view('changePassword');
 	}
 }

@@ -11,7 +11,7 @@
 	<meta name="description" content="Short explanation about this website">
 	<!-- END META -->
 
-	
+
 
 	<!-- BEGIN STYLESHEETS -->
 	<!-- Font Awesome -->
@@ -69,15 +69,15 @@
 				<ul class="header-nav header-nav-profile">
 					<li class="dropdown">
 						<a href="javascript:void(0);" class="dropdown-toggle ink-reaction" data-toggle="dropdown">
-							<img src="<?= base_url() ?>assets/img/avatar1.jpg?1403934956" alt="">
+
 							<span class="profile-info">
-								Daniel Johnson
+								SPUP Secretary
 								<small>Administrator</small>
 							</span>
 						</a>
 						<ul class="dropdown-menu animation-dock">
 							<?php $changePassword = base_url() . "Login/changePassword" ?>
-							<li><a href="<?= $changePassword ?>"><i class="fa fa-fw fa-power-off text-danger"></i> Change password</a></li>
+
 
 							<?php $logout = base_url() . "Login/logout" ?>
 							<li><a href="<?= $logout ?>"><i class="fa fa-fw fa-power-off text-danger"></i> Logout</a></li>
@@ -131,4 +131,4 @@
 
 
 		<!-- BEGIN CONTENT-->
-			<section>
+		<section>
