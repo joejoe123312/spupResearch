@@ -5,8 +5,7 @@
             <h1 style="padding:20px;font-weight:bold">New Research Project</h1>
         </center>
     </div>
-    <!--end .col -->
-    <div style="margin-bottom:20px"></div>
+
 
 
     <div class=" col-md-15">

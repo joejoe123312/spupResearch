@@ -144,14 +144,12 @@
 	<!--end #header-navbar-collapse -->
 	</div>
 	</header>
-	>>>>>>> 7f9fcadc980c45a85e209f4ef08ff44078b95ba4
+
 
 	<!-- BEGIN BASE-->
 	<div id="base">
 
-		<!-- BEGIN OFFCANVAS LEFT -->
-		<div class="offcanvas">
-		</div>
+
 		<!--end .offcanvas-->
 		<!-- END OFFCANVAS LEFT -->
 
