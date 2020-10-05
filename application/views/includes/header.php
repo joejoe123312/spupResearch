@@ -11,31 +11,7 @@
 	<meta name="description" content="Short explanation about this website">
 	<!-- END META -->
 
-	<!-- BEGIN STYLESHEETS -->
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-	<!-- Google Fonts -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-	<!-- Bootstrap core CSS -->
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
-	<!-- Material Design Bootstrap -->
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
-	<link href='http://fonts.googleapis.com/css?family=Roboto:300italic,400italic,300,400,500,700,900' rel='stylesheet' type='text/css' />
-	<link type="text/css" rel="stylesheet" href="<?= base_url() ?>assets/css/theme-default/bootstrap.css?1422792965" />
-	<link type="text/css" rel="stylesheet" href="<?= base_url() ?>assets/css/theme-default/materialadmin.css?1425466319" />
-	<link type="text/css" rel="stylesheet" href="<?= base_url() ?>assets/css/theme-default/font-awesome.min.css?1422529194" />
-	<link type="text/css" rel="stylesheet" href="<?= base_url() ?>assets/css/theme-default/material-design-iconic-font.min.css?1421434286" />
-	<link type="text/css" rel="stylesheet" href="<?= base_url() ?>assets/css/theme-default/libs/DataTables/jquery.dataTables.css?1423553989" />
-	<link type="text/css" rel="stylesheet" href="<?= base_url() ?>assets/css/theme-default/libs/DataTables/extensions/dataTables.colVis.css?1423553990" />
-	<link type="text/css" rel="stylesheet" href="<?= base_url() ?>assets/css/theme-default/libs/DataTables/extensions/dataTables.tableTools.css?1423553990" />
-	<link type="text/css" rel="stylesheet" href="<?= base_url() ?>assets/css/theme-default/libs/bootstrap-colorpicker/bootstrap-colorpicker.css?1424887860" />
-	<link type="text/css" rel="stylesheet" href="<?= base_url() ?>assets/css/theme-default/libs/bootstrap-tagsinput/bootstrap-tagsinput.css?1424887862" />
-	<link type="text/css" rel="stylesheet" href="<?= base_url() ?>assets/css/theme-default/libs/typeahead/typeahead.css?1424887863" />
-	<link type="text/css" rel="stylesheet" href="<?= base_url() ?>assets/css/theme-default/libs/dropzone/dropzone-theme.css?1424887864" />
-	<link type="text/css" rel="stylesheet" href="<?= base_url() ?>assets/css/theme-default/libs/select2/select2.css?1424887856" />
-	<link type="text/css" rel="stylesheet" href="<?= base_url() ?>assets/css/theme-default/libs/multi-select/multi-select.css?1424887857" />
-	<link type="text/css" rel="stylesheet" href="<?= base_url() ?>assets/css/theme-default/libs/toastr/toastr.css?1425466569" />
-	<!-- END STYLESHEETS -->
+	
 
 	<!-- BEGIN STYLESHEETS -->
 	<!-- Font Awesome -->
@@ -153,13 +129,7 @@
 		<!--end .offcanvas-->
 		<!-- END OFFCANVAS LEFT -->
 
-<<<<<<< HEAD
-			<!-- BEGIN CONTENT-->
-			<div id="content">
-				<section>
-=======
+
 		<!-- BEGIN CONTENT-->
 		<div id="content">
 			<section>
-				<div class="section-body contain-lg">
->>>>>>> 5639ef47e1f06bdee7d2d3130bf47b321a563933

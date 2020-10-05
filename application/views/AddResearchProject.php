@@ -5,11 +5,7 @@
             <h1 style="padding:20px;font-weight:bold">New Research Project</h1>
         </center>
     </div>
-<<<<<<< HEAD
-    <!--end .col -->
-=======
 
->>>>>>> 5639ef47e1f06bdee7d2d3130bf47b321a563933
 
 
     <div class=" col-md-15">
