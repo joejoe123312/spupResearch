@@ -11,6 +11,7 @@
 	<meta name="description" content="Short explanation about this website">
 	<!-- END META -->
 
+<<<<<<< HEAD
 	<!-- BEGIN STYLESHEETS -->
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
@@ -36,6 +37,30 @@
 	<link type="text/css" rel="stylesheet" href="<?= base_url() ?>assets/css/theme-default/libs/multi-select/multi-select.css?1424887857" />
 	<link type="text/css" rel="stylesheet" href="<?= base_url() ?>assets/css/theme-default/libs/toastr/toastr.css?1425466569" />
 	<!-- END STYLESHEETS -->
+=======
+		<!-- BEGIN STYLESHEETS -->
+		<!-- Font Awesome -->
+
+		<!-- Bootstrap core CSS -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+
+		<link href='http://fonts.googleapis.com/css?family=Roboto:300italic,400italic,300,400,500,700,900' rel='stylesheet' type='text/css' />
+		<link type="text/css" rel="stylesheet" href="<?= base_url() ?>assets/css/theme-default/bootstrap.css?1422792965" />
+		<link type="text/css" rel="stylesheet" href="<?= base_url() ?>assets/css/theme-default/materialadmin.css?1425466319" />
+		<link type="text/css" rel="stylesheet" href="<?= base_url() ?>assets/css/theme-default/font-awesome.min.css?1422529194" />
+		<link type="text/css" rel="stylesheet" href="<?= base_url() ?>assets/css/theme-default/material-design-iconic-font.min.css?1421434286" />
+		<link type="text/css" rel="stylesheet" href="<?= base_url() ?>assets/css/theme-default/libs/DataTables/jquery.dataTables.css?1423553989" />
+		<link type="text/css" rel="stylesheet" href="<?= base_url() ?>assets/css/theme-default/libs/DataTables/extensions/dataTables.colVis.css?1423553990" />
+		<link type="text/css" rel="stylesheet" href="<?= base_url() ?>assets/css/theme-default/libs/DataTables/extensions/dataTables.tableTools.css?1423553990" />
+		<link type="text/css" rel="stylesheet" href="<?= base_url() ?>assets/css/theme-default/libs/bootstrap-colorpicker/bootstrap-colorpicker.css?1424887860" />
+		<link type="text/css" rel="stylesheet" href="<?= base_url() ?>assets/css/theme-default/libs/bootstrap-tagsinput/bootstrap-tagsinput.css?1424887862" />
+		<link type="text/css" rel="stylesheet" href="<?= base_url() ?>assets/css/theme-default/libs/typeahead/typeahead.css?1424887863" />
+		<link type="text/css" rel="stylesheet" href="<?= base_url() ?>assets/css/theme-default/libs/dropzone/dropzone-theme.css?1424887864" />
+		<link type="text/css" rel="stylesheet" href="<?= base_url() ?>assets/css/theme-default/libs/select2/select2.css?1424887856" />
+		<link type="text/css" rel="stylesheet" href="<?= base_url() ?>assets/css/theme-default/libs/multi-select/multi-select.css?1424887857" />
+		<link type="text/css" rel="stylesheet" href="<?= base_url() ?>assets/css/theme-default/libs/toastr/toastr.css?1425466569" />
+		<!-- END STYLESHEETS -->
+>>>>>>> 7f9fcadc980c45a85e209f4ef08ff44078b95ba4
 
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
@@ -91,7 +116,32 @@
 			</div>
 			<!--end #header-navbar-collapse -->
 		</div>
+<<<<<<< HEAD
 	</header>
+=======
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="headerbar-right">
+			<ul class="header-nav header-nav-profile">
+				<li class="dropdown">
+					<a href="javascript:void(0);" class="dropdown-toggle ink-reaction" data-toggle="dropdown">
+						<img src="<?= base_url() ?>assets/img/avatar1.jpg?1403934956" alt="">
+						<span class="profile-info">
+							SECRETARY
+							<small>Administrator</small>
+						</span>
+					</a>
+					<ul class="dropdown-menu animation-dock">
+						<li><a href="">Change Password</a></li>
+						<li class="divider"></li>
+						<li><a href=""><i class="fa fa-fw fa-power-off text-danger"></i> Logout</a></li>
+					</ul><!--end .dropdown-menu -->
+				</li><!--end .dropdown -->
+			</ul><!--end .header-nav-profile -->
+			
+		</div><!--end #header-navbar-collapse -->
+	</div>
+</header>
+>>>>>>> 7f9fcadc980c45a85e209f4ef08ff44078b95ba4
 
 	<!-- BEGIN BASE-->
 	<div id="base">
