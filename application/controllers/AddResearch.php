@@ -29,6 +29,7 @@ class AddResearch extends CI_Controller
         //notifications
         $this->Main_model->alertPromt('Project Classification added successfully', 'projAdded');
         $this->Main_model->alertPromt('Project Classification Deleted', 'clasiDelete');
+        $this->Main_model->alertPromt('Must Add project classifications first', 'noClassifications');
 
         $this->form_validation->set_rules('projClassification', 'Project Classification', 'required');
         if ($this->form_validation->run()) {
@@ -68,6 +69,7 @@ class AddResearch extends CI_Controller
 
             //trap if the delition is completed
             if ($unlink) {
+
                 $this->Main_model->_delete('research', 'id', $researchId);
 
                 //notify and redirect
@@ -90,6 +92,11 @@ class AddResearch extends CI_Controller
     function deleteClassification()
     {
         $classificationId = $this->uri->segment(3);
+
+        //store the classification in the classification_repo
+        $insert['classification_id'] = $classificationId;
+        $insert['name'] = $this->Research_model->getClassificationName($classificationId);
+        $this->Main_model->_insert('classification_repo', $insert);
 
         //perform deletion
         $this->Main_model->_delete('project_classification', 'id', $classificationId);

@@ -23,12 +23,27 @@ class AddResearchProject extends CI_Controller
         $this->Main_model->alertPromt('File not allowed', 'fileNotAllowed');
         $this->Main_model->alertPromt('Please try again', 'fileError');
         $this->Main_model->alertPromt('File uploaded successfully', 'fileUploaded');
+        $this->Main_model->alertPromt('Document File needed', 'noFile');
+
+        //if there are no projectClassification redirect the page
+        $classificationTable = $this->Main_model->get('project_classification', 'id');
+        if (count($classificationTable->result_array()) == 0) {
+            $this->session->set_userdata('noClassifications', 1);
+            redirect("AddResearch/ProjectClassification");
+        }
 
         //get project classification 
         $data['projectClassification'] = $this->Main_model->get('project_classification', 'id');
 
         //manage form validations
         if (isset($_POST['submit'])) {
+            //trap: dont let form submission unless user inputs a document file
+            if ($_FILES['file']['name'] ==  "") {
+                $this->session->set_userdata('noFile', 1);
+
+                redirect("AddResearchProject");
+            }
+
             $researchersQuantity = $this->input->post('numberOfResearchers');
 
             //validate the form acordingly
