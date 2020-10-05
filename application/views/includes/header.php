@@ -131,5 +131,4 @@
 
 
 		<!-- BEGIN CONTENT-->
-		<div id="content">
 			<section>
