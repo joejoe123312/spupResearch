@@ -1,4 +1,14 @@
 <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+<!-- Alerts -->
+<?php $this->Main_model->alertPretty('noFile', 'File Invalid', 'error'); ?>
+<?php $this->Main_model->alertPretty('projectAdded', 'Thesis successfully', 'success'); ?>
+<?php $this->Main_model->alertPretty('invalidResearcher', 'Please add a researcher', 'success'); ?>
+<?php $this->Main_model->alertPretty('fileNotAllowed', 'File not allowed', 'error'); ?>
+<?php $this->Main_model->alertPretty('fileError', 'Please try again', 'error'); ?>
+<?php $this->Main_model->alertPretty('fileUploaded', 'File Uploaded successfully', 'success'); ?>
+
 <div class="section-body contain-lg">
     <div class="col-lg-15">
         <center class="style-default-dark">
@@ -122,11 +132,6 @@
             $("#researchBtn").click(function() {
                 var researchers = $("#numberOfResearchers").val();
 
-                //if the user does not put any number
-                if (researchers == '') {
-                    alert('Invalid input!');
-                }
-
                 if (researchers == 1) {
                     hideInput();
                     $("#researcher1").fadeIn(1000);
@@ -157,7 +162,13 @@
                     $("#researcher4").fadeIn(1000);
                     $("#researcher5").fadeIn(1000);
                 } else {
-                    alert('Invalid Input!');
+                    Swal.fire({
+                        position: 'center',
+                        icon: 'error',
+                        title: 'Invalid number of researchers',
+                        showConfirmButton: false,
+                        timer: 1500
+                    })
                 }
             });
         });

@@ -4,12 +4,31 @@ defined('BASEPATH') or exit('No direct script access allowed');
 class Main_model extends CI_Model
 {
 
-    //every time you will click a new nav. the system will let you 
-    //login again to access the voucher sending
-    function removeUserVoucherAuthenticated()
+    function adminMiddleware()
     {
-        unset($_SESSION['userVoucherAuthenticated']);
+        // check if the user logged in is an admin
+        if (!isset($_SESSION['account_id'])) {
+            redirect('Login/logout');
+        }
     }
+
+    function alertPretty($sessionName, $message, $icon)
+	{
+		if (isset($_SESSION[$sessionName])) {
+			echo '<script>';
+			echo "
+				Swal.fire({
+					position: 'center',
+					icon: '" . $icon . "',
+					title: '" . $message . "',
+					showConfirmButton: false,
+					timer: 1500
+				})
+			";
+			echo '</script>';
+			unset($_SESSION[$sessionName]);
+		}
+	}
 
     function deactivateActivators()
     {

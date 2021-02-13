@@ -8,6 +8,7 @@ class Dashboard extends CI_Controller
     {
         parent::__construct();
         $this->load->model('Main_model');
+        $this->Main_model->adminMiddleware();
     }
 
     public function index()

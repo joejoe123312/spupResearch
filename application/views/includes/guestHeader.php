@@ -44,15 +44,14 @@
     		src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.0.943/pdf.min.js">
   		</script>
 
+		
+		
 </head>
 
 <body class="menubar-hoverable header-fixed menubar-pin">
 
-<!-- Pdf viewer here -->
-<script src="<?= base_url() . "assets/js/pdfViewer.js" ?>"></script>
-<script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+</script>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<header id="header">
 		<div class="headerbar">
@@ -80,8 +79,8 @@
 						<a href="javascript:void(0);" class="dropdown-toggle ink-reaction" data-toggle="dropdown">
 
 							<span class="profile-info">
-								SPUP Secretary
-								<small>Administrator</small>
+								Profile
+								<small>GUEST</small>
 							</span>
 						</a>
 						<ul class="dropdown-menu animation-dock">

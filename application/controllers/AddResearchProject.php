@@ -15,16 +15,6 @@ class AddResearchProject extends CI_Controller
 
     public function index()
     {
-        //notification
-        $this->Main_model->alertPromt('Project Added Succesfully', 'projectAdded');
-        $this->Main_model->alertPromt('Must Enter a Researcher', 'invalidResearcher');
-
-        //Upload notifications
-        $this->Main_model->alertPromt('File not allowed', 'fileNotAllowed');
-        $this->Main_model->alertPromt('Please try again', 'fileError');
-        $this->Main_model->alertPromt('File uploaded successfully', 'fileUploaded');
-        $this->Main_model->alertPromt('Document File needed', 'noFile');
-
         //if there are no projectClassification redirect the page
         $classificationTable = $this->Main_model->get('project_classification', 'id');
         if (count($classificationTable->result_array()) == 0) {

@@ -83,4 +83,9 @@ class Login extends CI_Controller
 
 		$this->load->view('changePassword');
 	}
+
+	function guestLogin()
+	{
+		$this->session->set_userdata('guest', 1);
+	}
 }
