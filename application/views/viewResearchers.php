@@ -20,7 +20,6 @@
 
                         <th class="sort-numeric">#</th>
                         <th class="sort-alpha">Researcher's name</th>
-                        <th>Options</th>
 
                     </thead>
                     <tbody>
@@ -30,15 +29,6 @@
                             <tr>
                                 <td><?= $counter ?></td>
                                 <td><?= $row->name ?></td>
-                                <td>
-                                    <?php
-                                    $edit = base_url() . "";
-                                    $delete = base_url() . "";
-                                    ?>
-
-                                    <a href=""><button class="btn btn-primary btn-sm">Edit</button></a>
-                                    <a href=""><button class="btn btn-danger btn-sm">Delete</button></a>
-                                </td>
                             </tr>
                         <?php } ?>
                     </tbody>

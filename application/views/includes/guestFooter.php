@@ -1,84 +1,95 @@
-
-       
 </div>
-				<div class="menubar-fixed-panel">
-					<div>
-						<a class="btn btn-icon-toggle btn-default menubar-toggle" data-toggle="menubar" href="javascript:void(0);">
-							<i class="fa fa-bars"></i>
-						</a>
-					</div>
-					<div class="expanded">
-						<a href="">
-							<span class="text-lg text-bold text-primary ">SPUP&nbsp;RESEARCH</span>
-						</a>
-					</div>
-				</div>
-	<div id="menubar" class="menubar-inverse  animate">
+<div class="menubar-fixed-panel">
+	<div>
+		<a class="btn btn-icon-toggle btn-default menubar-toggle" data-toggle="menubar" href="javascript:void(0);">
+			<i class="fa fa-bars"></i>
+		</a>
+	</div>
+	<div class="expanded">
+		<a href="">
+			<span class="text-lg text-bold text-primary ">SPUP&nbsp;RESEARCH</span>
+		</a>
+	</div>
+</div>
+<div id="menubar" class="menubar-inverse  animate">
 
-				<div class="nano has-scrollbar" style="height: 550px;"><div class="nano-content" tabindex="0" style="right: -17px;"><div class="menubar-scroll-panel" style="padding-bottom: 33px;">
+	<div class="nano has-scrollbar" style="height: 550px;">
+		<div class="nano-content" tabindex="0" style="right: -17px;">
+			<div class="menubar-scroll-panel" style="padding-bottom: 33px;">
 
-					<!-- BEGIN MAIN MENU -->
-					<ul id="main-menu" class="gui-controls">
+				<!-- BEGIN MAIN MENU -->
+				<ul id="main-menu" class="gui-controls">
 
-						<!-- BEGIN DASHBOARD -->
-                   
-						<li class="expanded active">
+					<!-- BEGIN DASHBOARD -->
+
+					<li class="expanded active">
 						<?php $research = base_url() . "Guest" ?>
-							<a href="<?= $research ?>">
-								<div class="gui-icon"><i class="md md-search"></i></div>
-								<span class="title">RESEARCH</span>
-							</a>
-							<!--start submenu -->
-						</li>
-						<!-- END DASHBOARD -->
+						<a href="<?= $research ?>">
+							<div class="gui-icon"><i class="md md-search"></i></div>
+							<span class="title">RESEARCH</span>
+						</a>
+						<!--start submenu -->
+					</li>
+					<!-- END DASHBOARD -->
 
-						<!-- BEGIN EMAIL -->
-						
-					</ul><!--end .main-menu -->
-					<!-- END MAIN MENU -->
+					<!-- BEGIN EMAIL -->
 
-					<div class="menubar-foot-panel">
-						<small class="no-linebreak hidden-folded">
-							<span class="opacity-75">Copyright © 2020</span> <strong>Joel John Centeno</strong>
-						</small>
-					</div>
-				</div></div><div class="nano-pane" style="display: none;"><div class="nano-slider" style="height: 534px; transform: translate(0px, 0px);"></div></div></div><!--end .menubar-scroll-panel-->
+				</ul>
+				<!--end .main-menu -->
+				<!-- END MAIN MENU -->
+
+				<div class="menubar-foot-panel">
+					<small class="no-linebreak hidden-folded">
+						<span class="opacity-75">Copyright © 2020</span> <strong>Joel John Centeno</strong>
+					</small>
+				</div>
 			</div>
+		</div>
+		<div class="nano-pane" style="display: none;">
+			<div class="nano-slider" style="height: 534px; transform: translate(0px, 0px);"></div>
+		</div>
+	</div>
+	<!--end .menubar-scroll-panel-->
+</div>
 
-</div>        
+</div>
 
+<!-- Script for not letting the user right click to download the images -->
+<script>
+	document.addEventListener('contextmenu', event => event.preventDefault());
+</script>
 
-        <!-- BEGIN JAVASCRIPT -->	
-    	<script src="<?= base_url() ?>assets/js/libs/jquery/jquery-1.11.2.min.js"></script>
-		<script src="<?= base_url() ?>assets/js/libs/jquery/jquery-migrate-1.2.1.min.js"></script>
-		<script src="<?= base_url() ?>assets/js/libs/bootstrap/bootstrap.min.js"></script>
-		<script src="<?= base_url() ?>assets/js/libs/spin.js/spin.min.js"></script>
-		<script src="<?= base_url() ?>assets/js/libs/autosize/jquery.autosize.min.js"></script>
-		<script src="<?= base_url() ?>assets/js/libs/DataTables/jquery.dataTables.min.js"></script>
-		<script src="<?= base_url() ?>assets/js/libs/DataTables/extensions/ColVis/js/dataTables.colVis.min.js"></script>
-		<script src="<?= base_url() ?>assets/js/libs/DataTables/extensions/TableTools/js/dataTables.tableTools.min.js"></script>
-		<script src="<?= base_url() ?>assets/js/libs/nanoscroller/jquery.nanoscroller.min.js"></script>
-		<script src="<?= base_url() ?>assets/js/core/source/App.js"></script>
-		<script src="<?= base_url() ?>assets/js/core/source/AppNavigation.js"></script>
-		<script src="<?= base_url() ?>assets/js/core/source/AppOffcanvas.js"></script>
-		<script src="<?= base_url() ?>assets/js/core/source/AppCard.js"></script>
-		<script src="<?= base_url() ?>assets/js/core/source/AppForm.js"></script>
-		<script src="<?= base_url() ?>assets/js/core/source/AppNavSearch.js"></script>
-		<script src="<?= base_url() ?>assets/js/core/source/AppVendor.js"></script>
-		<script src="<?= base_url() ?>assets/js/core/demo/Demo.js"></script>
-		<script src="<?= base_url() ?>assets/js/core/demo/DemoTableDynamic.js"></script>
-		<script src="<?= base_url() ?>assets/js/libs/dropzone/dropzone.min.js"></script>
-		<script src="<?= base_url() ?>assets/js/libs/typeahead/typeahead.bundle.min.js"></script>
-		<script src="<?= base_url() ?>assets/js/libs/jquery-ui/jquery-ui.min.js"></script>
-		<script src="<?= base_url() ?>assets/js/libs/select2/select2.min.js"></script>
-		<script src="<?= base_url() ?>assets/js/libs/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
-		<script src="<?= base_url() ?>assets/js/libs/multi-select/jquery.multi-select.js"></script>
-		<script src="<?= base_url() ?>assets/js/libs/inputmask/jquery.inputmask.bundle.min.js"></script>
-		<script src="<?= base_url() ?>assets/js/libs/moment/moment.min.js"></script>
-		<script src="<?= base_url() ?>assets/js/libs/bootstrap-datepicker/bootstrap-datepicker.js"></script>
-		<script src="<?= base_url() ?>assets/js/libs/bootstrap-colorpicker/bootstrap-colorpicker.min.js"></script>
-		<script src="<?= base_url() ?>assets/js/libs/toastr/toastr.js"></script>
-		<!-- END JAVASCRIPT -->
-        	</body>
+<!-- BEGIN JAVASCRIPT -->
+<!-- <script src="<?= base_url() ?>assets/js/libs/jquery/jquery-1.11.2.min.js"></script> -->
+<script src="<?= base_url() ?>assets/js/libs/jquery/jquery-migrate-1.2.1.min.js"></script>
+<script src="<?= base_url() ?>assets/js/libs/bootstrap/bootstrap.min.js"></script>
+<script src="<?= base_url() ?>assets/js/libs/spin.js/spin.min.js"></script>
+<script src="<?= base_url() ?>assets/js/libs/autosize/jquery.autosize.min.js"></script>
+<script src="<?= base_url() ?>assets/js/libs/DataTables/jquery.dataTables.min.js"></script>
+<script src="<?= base_url() ?>assets/js/libs/DataTables/extensions/ColVis/js/dataTables.colVis.min.js"></script>
+<script src="<?= base_url() ?>assets/js/libs/DataTables/extensions/TableTools/js/dataTables.tableTools.min.js"></script>
+<script src="<?= base_url() ?>assets/js/libs/nanoscroller/jquery.nanoscroller.min.js"></script>
+<script src="<?= base_url() ?>assets/js/core/source/App.js"></script>
+<script src="<?= base_url() ?>assets/js/core/source/AppNavigation.js"></script>
+<script src="<?= base_url() ?>assets/js/core/source/AppOffcanvas.js"></script>
+<script src="<?= base_url() ?>assets/js/core/source/AppCard.js"></script>
+<script src="<?= base_url() ?>assets/js/core/source/AppForm.js"></script>
+<script src="<?= base_url() ?>assets/js/core/source/AppNavSearch.js"></script>
+<script src="<?= base_url() ?>assets/js/core/source/AppVendor.js"></script>
+<script src="<?= base_url() ?>assets/js/core/demo/Demo.js"></script>
+<script src="<?= base_url() ?>assets/js/core/demo/DemoTableDynamic.js"></script>
+<script src="<?= base_url() ?>assets/js/libs/dropzone/dropzone.min.js"></script>
+<script src="<?= base_url() ?>assets/js/libs/typeahead/typeahead.bundle.min.js"></script>
+<script src="<?= base_url() ?>assets/js/libs/jquery-ui/jquery-ui.min.js"></script>
+<script src="<?= base_url() ?>assets/js/libs/select2/select2.min.js"></script>
+<script src="<?= base_url() ?>assets/js/libs/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
+<script src="<?= base_url() ?>assets/js/libs/multi-select/jquery.multi-select.js"></script>
+<script src="<?= base_url() ?>assets/js/libs/inputmask/jquery.inputmask.bundle.min.js"></script>
+<script src="<?= base_url() ?>assets/js/libs/moment/moment.min.js"></script>
+<script src="<?= base_url() ?>assets/js/libs/bootstrap-datepicker/bootstrap-datepicker.js"></script>
+<script src="<?= base_url() ?>assets/js/libs/bootstrap-colorpicker/bootstrap-colorpicker.min.js"></script>
+<script src="<?= base_url() ?>assets/js/libs/toastr/toastr.js"></script>
+<!-- END JAVASCRIPT -->
+</body>
+
 </html>
-

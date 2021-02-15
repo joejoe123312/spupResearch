@@ -10,7 +10,6 @@ class AddResearch extends CI_Controller
         $this->load->model('Main_model');
         $this->load->model('Research_model');
         $this->load->model('Researchers_model');
-       
     }
 
     public function index()
@@ -113,6 +112,20 @@ class AddResearch extends CI_Controller
         $data['researchersTable'] = $this->Main_model->get_where('researchers', 'research_id', $researchId);
         $data['projectTitle'] = $this->Researchers_model->getProjectTitle($researchId);
 
+        $this->load->view('includes/header');
         $this->load->view('seeResearchers', $data);
+        $this->load->view('includes/footer');
+    }
+
+    function viewResearchers()
+    {
+        $researchId = $this->uri->segment(3);
+
+        $data['researchersTable'] = $this->Main_model->get_where('researchers', 'research_id', $researchId);
+        $data['projectTitle'] = $this->Researchers_model->getProjectTitle($researchId);
+
+        $this->load->view('includes/guestHeader');
+        $this->load->view('viewResearchers', $data);
+        $this->load->view('includes/guestFooter');
     }
 }

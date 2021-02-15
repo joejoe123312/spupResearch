@@ -33,24 +33,22 @@
 	<link type="text/css" rel="stylesheet" href="<?= base_url() ?>assets/css/theme-default/libs/toastr/toastr.css?1425466569" />
 	<!-- END STYLESHEETS -->
 
-
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
 		<script type="text/javascript" src="../../assets/js/libs/utils/html5shiv.js?1403934957"></script>
 		<script type="text/javascript" src="../../assets/js/libs/utils/respond.min.js?1403934956"></script>
 		<![endif]-->
 
-		<script
-    		src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.0.943/pdf.min.js">
-  		</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.0.943/pdf.min.js">
+	</script>
 
-		
-		
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
 </head>
 
 <body class="menubar-hoverable header-fixed menubar-pin">
 
-</script>
+	</script>
 
 
 	<header id="header">
